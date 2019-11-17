@@ -5,6 +5,7 @@
     <title>Directives</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
     <script src="./app/app.js"></script>
+    <script src="./app/authorDirective.js"></script>
     <script src="./app/LabController.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
         crossorigin="anonymous">
@@ -12,7 +13,8 @@
 
 <body ng-controller="LabController as vm">
     <div class="container">
-        <h1>Directives</h1>
+        <h1 class="text-center">Directives</h1>
+        <author author="vm.author" action="vm.show(person)"></author>
     </div>
 
     
